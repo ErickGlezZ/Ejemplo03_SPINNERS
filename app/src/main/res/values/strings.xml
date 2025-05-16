@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejemplo03_SPINNERS</string>
+    <string name="txt_convertir">Convertir:</string>
+    <string name="hint_caja_grados">Grados a convertir</string>
+    <string name="hint_caja_conversion">Resultado</string>
+
+</resources>
