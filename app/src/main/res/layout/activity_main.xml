@@ -20,65 +20,68 @@
     <!-- Caja de grados -->
     <EditText
         android:id="@+id/caja_grados"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="590dp"
+        android:layout_height="55dp"
+        android:layout_margin="8dp"
         android:hint="@string/hint_caja_grados"
         android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/spinner_grados_1"
-        android:layout_margin="8dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <!-- Spinner grados 1 -->
-    <Spinner
-        android:id="@+id/spinner_grados_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/caja_grados"
-        app:layout_constraintStart_toEndOf="@id/caja_grados"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="8dp"/>
 
     <!-- Texto "A:" -->
+
+    <Spinner
+        android:id="@+id/spinner_grados_1"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/caja_grados"
+        app:layout_constraintTop_toTopOf="@id/caja_grados" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A:"
-        app:layout_constraintTop_toBottomOf="@id/caja_grados"
+        android:layout_margin="8dp"
+        android:text="@string/txt_convestir_A"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="8dp"/>
+        app:layout_constraintTop_toBottomOf="@id/caja_grados" />
 
     <!-- Spinner grados 2 (ahora a la izquierda) -->
     <Spinner
         android:id="@+id/spinner_graodos_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textView2"
+        android:layout_width="122dp"
+        android:layout_height="49dp"
+        android:layout_margin="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="8dp"/>
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <!-- Texto "=" -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="="
-        app:layout_constraintTop_toTopOf="@id/spinner_graodos_2"
-        app:layout_constraintStart_toEndOf="@id/spinner_graodos_2"
+        android:layout_margin="8dp"
+        android:text="@string/txt_igual"
         app:layout_constraintEnd_toStartOf="@id/caja_resultados"
-        android:layout_margin="8dp"/>
+        app:layout_constraintStart_toEndOf="@id/spinner_graodos_2"
+        app:layout_constraintTop_toTopOf="@id/spinner_graodos_2" />
 
     <!-- Caja de resultados (ahora a la derecha) -->
     <EditText
         android:id="@+id/caja_resultados"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="562dp"
+        android:layout_height="59dp"
+        android:layout_margin="8dp"
         android:hint="@string/hint_caja_conversion"
         android:inputType="number"
-        app:layout_constraintTop_toTopOf="@id/spinner_graodos_2"
-        app:layout_constraintStart_toEndOf="@id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="8dp"/>
+        app:layout_constraintStart_toEndOf="@id/textView3"
+        app:layout_constraintTop_toTopOf="@id/spinner_graodos_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

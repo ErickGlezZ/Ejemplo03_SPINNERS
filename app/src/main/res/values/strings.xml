@@ -3,5 +3,7 @@
     <string name="txt_convertir">Convertir:</string>
     <string name="hint_caja_grados">Grados a convertir</string>
     <string name="hint_caja_conversion">Resultado</string>
+    <string name="txt_convestir_A">A:</string>
+    <string name="txt_igual">=</string>
 
 </resources>
